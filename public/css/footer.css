@@ -1,0 +1,9 @@
+footer {
+    background: linear-gradient(70deg, #31044490,  #44d62c30);
+    border: 2mm ridge #44d62c;
+}
+
+footer a {
+    color: #f8f9fa !important;
+    text-decoration: none;
+}

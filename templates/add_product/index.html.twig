@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout d'un produit{% endblock %}
+
+{% block body %}
+
+<div class="container col-lg-4 FormAdd">
+ <h1>Ajouter un produit</h1>
+
+ {#Afficher un formulaire #}
+{{ form_start (AddProductFormType) }}
+
+<div>
+    {{ form_label(AddProductFormType.name) }}
+    {{ form_widget(AddProductFormType.name) }}
+</div>
+
+
+{{ form_widget (AddProductFormType) }}
+ <button class="btn btn-primary">Ajouter</button>
+{{ form_end (AddProductFormType) }}
+</div>
+
+{% endblock %}

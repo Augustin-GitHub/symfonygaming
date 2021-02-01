@@ -1,0 +1,20 @@
+.navbar{
+    background-image: url(../img/uploads/fixtures/03.jpg);
+}
+.navbar-brand{
+    color:#44d62c;
+}
+
+.navbar-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#44d62c;
+}
+.navbar-collapse{
+    justify-content:center;
+}
+
+.logoNav{
+    width: auto;
+    height: 100px;
+}

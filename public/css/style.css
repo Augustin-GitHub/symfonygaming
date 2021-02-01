@@ -1,0 +1,64 @@
+body{
+    background-image: url(../img/uploads/fixtures/03.jpg);
+}
+
+.jumbotron-title{
+    padding-top:20px;
+    color:#44d62c;
+}
+.card-header{
+    background-color: #44d62c;
+}
+.card-body{
+    background-image: url(../img/uploads/fixtures/04.jpg);
+    color:#44d62c;
+}
+
+.list-group-item{
+    background-image: url(../img/uploads/fixtures/04.jpg);
+    color:#44d62c;
+}
+
+.card-img-top{
+    background-image: url(../img/uploads/fixtures/04.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: #44d62c;
+}
+
+.card {
+    background-color: transparent !important; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________________________________________________*/
+/* canvas {
+    position: absolute;
+    background-repeat: no-repeat;
+    height:100%;
+    width: 100%;
+}*/
