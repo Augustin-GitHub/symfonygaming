@@ -10,11 +10,43 @@
     text-transform: uppercase;
     color:#44d62c;
 }
-.navbar-collapse{
+.navbar-collapse1{
     justify-content:center;
 }
 
 .logoNav{
     width: auto;
     height: 100px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navbar-nav a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: transparent; 
+    color: #44d62c;
+}
+
+.dropdown-item {
+    color: #44d62c;
+}
+
+.dropdown-menu a:hover {
+    color: #fff;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: #44d62c !important;
+  }
+
+.navbar-collapse {
+    margin-left: 200px;
 }

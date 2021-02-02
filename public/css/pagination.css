@@ -6,13 +6,12 @@
     height: 25px;
     margin: 5px 10px;
     border-radius: 999px;
-    background: #FF4081;
+    background: #002909;
     cursor: pointer;
     transition: 0.25s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
     padding: 10px;
     font-weight: bold;
 }
@@ -24,19 +23,19 @@
     height: 25px;
     margin: 5px 10px;
     border-radius: 999px;
-    background: #40c3ff;
+    background: #44d62c;
     cursor: pointer;
     transition: 0.25s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: rgb(0, 0, 0);
     padding: 10px;
 }
 
 .pagination a {
     text-decoration: none;
-    color:black;
+    color:#44d62c;
 }
 
 .first, .previous, .next, .last {
@@ -44,13 +43,13 @@
     height: 25px;
     margin: 5px 5px;
     border-radius: 999px;
-    background: #44d62c;
+    background: #000000;
     cursor: pointer;
     transition: 0.25s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #690b72;
     padding: 10px;
     font-weight: bold;
 }

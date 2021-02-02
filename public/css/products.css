@@ -9,7 +9,7 @@
 .buttonAddCart{
     color:green;
     width: 100%;
-    border: 10px ridge green;
+    border: thick double green;
 }
 .logocart{
     width:50px;
@@ -17,5 +17,5 @@
 }
 .heart{
     color:green;
-    border: 10px ridge green;
+    border: thick double green;
 }

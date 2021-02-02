@@ -20,6 +20,11 @@ class AddProductFormType extends AbstractType
             ->add('price')
             ->add('creationdate')
             ->add('favorite')
+
+            ->add('pcstuff', null,[
+                'choice_label' => 'name'
+            ])
+
             ->add('color', ChoiceType::class, [
                 'choices' => [
                     'non défini' => 'non défini',

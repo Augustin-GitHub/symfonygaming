@@ -3,3 +3,75 @@
     background-color: transparent;
     border-color: transparent;
 }
+
+.btn-success {
+    color: #44d62c;
+    border-color: #44d62c;
+    background-color: transparent;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: transparent;
+    border-color: #44d62c;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #44d62c;
+    border-color: #44d62c;
+}
+
+.btn-danger:hover {
+    background-color: transparent;
+    border-color: #44d62c;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+        color: #fff;
+        border-color: #44d62c;
+        background-color: transparent;
+}
+
+.btn-secondary:focus {
+    color: #fff;
+    border-color: #44d62c;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: #44d62c;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    border-color: #44d62c;
+}
+
+.form-control {
+    background-color: transparent;
+    border-color: #44d62c;
+    color: #44d62c;
+}
+
+.form-control:hover {
+    background-color: transparent;
+    color: white;
+    border-color: #44d62c;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: white;
+    border-color: #44d62c;
+}
+
+td, th {
+    color: #44d62c;
+}
+
+ul.list-inline {
+    margin-top: 250px;
+}

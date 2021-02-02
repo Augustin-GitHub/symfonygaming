@@ -28,10 +28,10 @@
     <div class="row">
         <!-- Image -->
         <div class="col-12 col-lg-6">
-            <div class="card mb-3">
+            <div class="card bg-light mb-3">
                 <div class="card-body">
                     <a href="" data-toggle="modal" data-target="#productModal">
-                        <img class="img-fluid" src="{{ asset('img/' ~ product.image) }}">
+                        <img class="img-fluid" src="{{ asset('img/uploads/' ~ product.image) }}">
                         <p class="text-center">Zoom</p>
                     </a>
                 </div>
@@ -40,12 +40,16 @@
 
         <!-- Add to cart -->
         <div class="col-12 col-lg-6 add_to_cart_block">
-            <div class="card mb-3">
+            <div class="card bg-light mb-3">
                 <div class="card-body">
                     <p class="price">{{ product.price }} &euro;</p>
+                    <p class="price">  Catégorie : {{ product.pcstuff.name }}</p>
                     {% if product.promotion %}
                             <p class="price_discounted">{{ product.promotion }} &euro;</p>
+                            <p> {{ Product.price }} </p>
                     {% endif %}
+
+
                     <form method="get" action="cart.html">
                         <div class="form-group">
                             <label for="colors">Couleur</label>
