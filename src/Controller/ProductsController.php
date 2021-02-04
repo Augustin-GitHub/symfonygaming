@@ -3,6 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Product;
+use App\Repository\PcstuffRepository;
 use App\Repository\ProductRepository;
 use Knp\Component\Pager\PaginatorInterface;
 use Symfony\Component\HttpFoundation\Request;
@@ -15,9 +16,10 @@ class ProductsController extends AbstractController
     /**
      * @Route("/products", name="products")
      */
-        public function index(Request $request, PaginatorInterface $paginator, ProductRepository $productRepository):Response
+        public function index(Request $request, PaginatorInterface $paginator, ProductRepository $productRepository, PcstuffRepository $pcstuffRepository):Response
         {
             $Entity = $this->getDoctrine()->getRepository(Product::class);
+            $category = $pcstuffRepository->findAll();
 
             $Entities = $paginator->paginate(
                 $Entity->findAll(), 
@@ -27,14 +29,15 @@ class ProductsController extends AbstractController
             );
 
         $lastProduct = $productRepository->FindLastId();
-        dump($lastProduct);
+       // dump($lastProduct);
 
         $lastProduct = $lastProduct[0];
-        dump($lastProduct);
+       // dump($lastProduct);
 
         return $this->render('products/index.html.twig', [
             'Entities' => $Entities,
-            'LastProduct' => $lastProduct
+            'LastProduct' => $lastProduct,
+            'categories' => $category,
         ]);
     }
 }

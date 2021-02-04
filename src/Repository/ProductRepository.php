@@ -39,4 +39,14 @@ class ProductRepository extends ServiceEntityRepository
             ->getResult()
             ; 
     }
+
+    public function FindStuff($pcstuff){
+        $qb = $this->createQueryBuilder('op') // op = one product
+                    ->innerJoin('op.pcstuff', 'ps')
+                    ->andWhere('ps = :pcstuff')
+                    ->setParameter('pcstuff', $pcstuff);
+
+        // dump($qb->getQuery()->getResult());
+        return $qb->getQuery()->getResult();
+    }
 }

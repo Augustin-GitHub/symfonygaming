@@ -57,11 +57,9 @@
             <div class="card mb-3">
                 <div class="card-header text-white text-uppercase"><i class="fa fa-list"></i> Catégories</div>
                 <ul class="list-group category_block">
-                    <li class="list-group-item"><a href="category.html">Cras justo odio</a></li>
-                    <li class="list-group-item"><a href="category.html">Dapibus ac facilisis in</a></li>
-                    <li class="list-group-item"><a href="category.html">Morbi leo risus</a></li>
-                    <li class="list-group-item"><a href="category.html">Porta ac consectetur ac</a></li>
-                    <li class="list-group-item"><a href="category.html">Vestibulum at eros</a></li>
+                    {% for category in categories  %}
+                        <li class="list-group-item"><a href="{{ path ('category', {'id':category.id}) }}">{{ category.name }}</a></li>
+                    {% endfor %}                  
                 </ul>
             </div>
             <div class="card mb-3">
@@ -101,10 +99,10 @@
                                             <a href="" class="btn  buttonAddCart "><i class="fas fa-1x fa-cart-arrow-down"></i></a>
                                         </div>
                                         <div class="col-lg-6">
-                                            <a class="btn buttonAddCart" href="{{ path('edit', {id: Entity.id}) }}">Modifier</a>
+                                            <a class="btn buttonAddCart" href="{{ path ('edit', {id: Entity.id}) }}">Modifier</a>
                                         </div>
                                         <div class="col-lg-6">
-                                            <a class="btn buttonAddCart" href="{{ path('delete_product', {id: Entity.id}) }}">Supprimer</a>
+                                            <a class="btn buttonAddCart" href="{{ path ('delete_product', {id: Entity.id}) }}">Supprimer</a>
                                         </div>
                             </div>
                         </div>
